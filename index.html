@@ -10,31 +10,25 @@
         <div>
             <div>
                 <div><label>E-mail</label></div>
-                <input type="email" name="email" placeholder="seu@email.com">
+                <input type="email" name="email" id="email" onchange="validateFields()" placeholder="seu@email.com">
             </div>
         </div>
         <div>
             <div>
                 <div><label>Senha</label></div>
-                <input type="password" name="password" placeholder="Senha">
+                <input type="password" name="password" id="password" onchange="validateFields()" placeholder="Senha">
             </div>
         </div>
         <div>
-            <button type="button">Entrar</button>
+            <button type="button" class="clear" id="recover-passwrod-button" disabled="true">Recuperar senha</button>
         </div>
         <div>
-            <button type="submit">Registrar</button>
+            <button type="submit" class="solid" id="login-button" disabled="true">Entrar</button>
         </div>
         <div>
-            <button type="button">Recuperar senha</button>    
+            <button type="button" class="outline" disabled="true">Registrar</button>    
         </div>
-        
     </form>
-    <style>
-
-    </style>
-    <script>
-        
-    </script>
 </body>
+<link rel="stylesheet" href="index.css">
 </html>
