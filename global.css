@@ -1,0 +1,26 @@
+.clear {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.solid {
+    background-color: white;
+    border: none;
+    color: rgb(45, 211, 111);
+}
+.outline {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white; /*borda branca do botão registrar*/
+}
+button:active {
+    opacity: 0.8; /*quando botão for clicado dá efeito de clique*/
+}
+button[disabled] {
+    opacity: 0.6;
+}
+.error {
+    color: white;
+    background-color: red;
+    display: none;
+}

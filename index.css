@@ -10,7 +10,6 @@ form {
 }
 input, button {
     padding: 10px;
-    margin-bottom: 10px;
     width: -webkit-fill-available; /*deixa o botão do tamanho dos campos*/
 }
 input {
@@ -18,22 +17,10 @@ input {
 }
 button {
     cursor: pointer;
+    margin-bottom: 10px;
 }
-button:active {
-    opacity: 0.8; /*quando botão for clicado dá efeito de clique*/
+
+.form-field {
+    margin-bottom: 10px;
 }
-.clear {
-    border: none;
-    background-color: transparent;
-    color: white;
-}
-.solid {
-    background-color: white;
-    border: none;
-    color: rgb(45, 211, 111);
-}
-.outline {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white; /*borda branca do botão registrar*/
-}
+
