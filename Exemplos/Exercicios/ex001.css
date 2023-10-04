@@ -1,0 +1,26 @@
+body {
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.button1 {
+    cursor: pointer;
+    margin:  10px;
+}
+.button2 {
+    cursor: pointer;
+    margin:  10px;
+}
+.button3 {
+    cursor: pointer;
+    margin:  10px;
+}

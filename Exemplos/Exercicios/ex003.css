@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-size: 15px;
+    cursor: pointer;
+}
+.div1 {
+   padding: 250px;
+}
+.div2 {
+    backgrou/*d-color: green;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div3 {
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

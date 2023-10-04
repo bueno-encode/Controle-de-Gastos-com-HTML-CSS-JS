@@ -22,10 +22,10 @@
             <div><button type="button" class="clear" id="recover-password-button" disabled>Recuperar senha</button></div>
         </div>
         <div>
-            <div><button type="button" class="solid" id="login-button" disabled>Entrar</button></div>
+            <div><button type="button" class="solid" id="login-button" disabled onclick="login()" >Entrar</button></div>
         </div>
         <div>
-            <div><button type="button" class="outline">Registrar</button></div>
+            <div><button type="button" class="outline" onclick="register()" >Registrar</button></div>
         </div>
     </form>
 </body>
@@ -35,5 +35,26 @@
 
 <script src="index.js"></script>    
 <script src="validations.js"></script>
+<script scr="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+<script scr="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDRontdmOs9O0bEx9VshD99YxvSFVrBHA0",
+        authDomain: "controle-de-gastos-32b5c.firebaseapp.com",
+        projectId: "controle-de-gastos-32b5c",
+        storageBucket: "controle-de-gastos-32b5c.appspot.com",
+        messagingSenderId: "536470661043",
+        appId: "1:536470661043:web:a7537de102ec66423acdc6"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    console.log('antes');
+    firebase.auth().signInWithEmailAndPassword("any@email.com", "123456").then(response => {
+        console.log('success', response)
+    }).catch(error => {
+        console.log('error', error)
+    });
+    console.log('depois');
+</script>
 
 </html>
