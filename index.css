@@ -5,19 +5,18 @@ body {
     align-items: center; /*centraliza*/
     height: 100vh; /*centraliza*/
 }
+
 form {
     width: 300px;
 }
+
 input, button {
     padding: 10px;
     width: -webkit-fill-available; /*deixa o botão do tamanho dos campos*/
 }
+
 input {
     border: none;
-}
-button {
-    cursor: pointer;
-    margin-bottom: 10px;
 }
 
 .form-field {

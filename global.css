@@ -1,24 +1,55 @@
+body {
+    margin: 0;
+}
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.loading label {
+    font-size: 24px;
+}
+
+button {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:active {
+    opacity: 0.8; /*quando botão for clicado dá efeito de clique*/
+}
+
+button[disabled] {
+    opacity: 0.6;
+}
+
 .clear {
     border: none;
     background-color: transparent;
     color: white;
 }
+
 .solid {
     background-color: white;
     border: none;
     color: rgb(45, 211, 111);
 }
+
 .outline {
     background-color: transparent;
     color: white;
     border: 1px solid white; /*borda branca do botão registrar*/
 }
-button:active {
-    opacity: 0.8; /*quando botão for clicado dá efeito de clique*/
-}
-button[disabled] {
-    opacity: 0.6;
-}
+
 .error {
     color: white;
     background-color: red;
